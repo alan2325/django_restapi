@@ -44,7 +44,7 @@ def fun2(req):
 @csrf_exempt
 def fun3(req,d):
     try:
-        demo=student.objects.get(pk-d)
+        demo=student.objects.get(pk=d)
     except student.DoesNotExist:
         return HttpResponse('invalid')
     if req.method=='GET':
@@ -58,6 +58,6 @@ def fun3(req,d):
             return JsonResponse(s.data)
         else:
             return JsonResponse(s.errors)
-    elif req.method--'DELETE':
+    elif req.method=='DELETE':
         demo.delete()
         return HttpResponse('deleted')
