@@ -5,5 +5,6 @@ urlpatterns = [
     path('std',views.student),
     path('fun',views.fun1),
     path('fun2',views.fun2),
+    path('fun3',views.fun3),
 ]
 
