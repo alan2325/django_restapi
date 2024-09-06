@@ -10,5 +10,7 @@ urlpatterns = [
     path('fun5/<int:d>',views.fun5),
     path('fun6',views.fun6.as_view()),
     path('fun7/<int:d>',views.fun7.as_view()),
+    path('fun8',views.genericapiview.as_view()),
+    path('fun9/<int:id>',views.update.as_view()),
 ]
 
